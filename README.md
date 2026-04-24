@@ -3,7 +3,7 @@
 Um projeto que envolve ligação entre Backend e Frontend sobre uma loja de pelúcias.
 
 ## Print das Telas
-|![img](/assets/foto1.png)|![img](/assets/foto2.png)
+|![img](/assets/foto2.png)|![img](/assets/foto1.png)
 |:-:|:-:|
 |Tela 01|Tela 02|
 ## Tecnologias
