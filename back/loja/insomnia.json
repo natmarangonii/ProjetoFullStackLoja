@@ -1,0 +1,103 @@
+{
+  "_type": "export",
+  "__export_format": 4,
+  "__export_date": "2026-04-17T14:22:59.581Z",
+  "__export_source": "backend-aula",
+  "resources": [
+    {
+      "_id": "wrk_backend",
+      "_type": "workspace",
+      "name": "Backend Aula"
+    },
+    {
+      "_id": "fld_loja",
+      "_type": "request_group",
+      "parentId": "wrk_backend",
+      "name": "loja"
+    },
+    {
+      "_id": "fld_Pelucias",
+      "_type": "request_group",
+      "parentId": "fld_loja",
+      "name": "Pelucias"
+    },
+    {
+      "_id": "req_Pelucias_GET_ALL",
+      "_type": "request",
+      "parentId": "fld_Pelucias",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "name": "Listar",
+      "method": "GET",
+      "url": "http://localhost:3000/pelucias/listar"
+    },
+    {
+      "_id": "req_Pelucias_GET_ID",
+      "_type": "request",
+      "parentId": "fld_Pelucias",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "name": "Buscar",
+      "method": "GET",
+      "url": "http://localhost:3000/pelucias/buscar/:id"
+    },
+    {
+      "_id": "req_Pelucias_POST",
+      "_type": "request",
+      "parentId": "fld_Pelucias",
+      "name": "Cadastrar",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "method": "POST",
+      "url": "http://localhost:3000/pelucias/cadastrar",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"nome\": \"string\",\n  \"imagem\": \"string\",\n  \"preco\": 0,\n  \"categoria\": \"string\"\n}"
+      }
+    },
+    {
+      "_id": "req_Pelucias_PUT",
+      "_type": "request",
+      "parentId": "fld_Pelucias",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "name": "Atualizar",
+      "method": "PUT",
+      "url": "http://localhost:3000/pelucias/atualizar/:id",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"nome\": \"string\",\n  \"imagem\": \"string\",\n  \"preco\": 0,\n  \"categoria\": \"string\"\n}"
+      }
+    },
+    {
+      "_id": "req_Pelucias_DELETE",
+      "_type": "request",
+      "parentId": "fld_Pelucias",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "name": "Excluir",
+      "method": "DELETE",
+      "url": "http://localhost:3000/pelucias/excluir/:id"
+    }
+  ]
+}

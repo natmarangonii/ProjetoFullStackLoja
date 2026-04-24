@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Loja de Pelucia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Loja de Pelucias</h1>
+    <button onclick="cadastro.classList.remove('oculto')">
+        Adicionar Produto
+    </button>
+</header>
+
+<main></main>
+
+<!-- CADASTRO -->
+<div id="cadastro" class="modal oculto">
+    <div class="janela">
+
+        <h2>Novo Produto</h2>
+
+        <form id="formCad">
+
+            <label>Nome</label>
+            <input type="text" id="nome" required>
+
+            <label>Categoria</label>
+            <select id="categoria" required>
+                <option value="">Selecione a categoria</option>
+                <option value="pequenas">Pelúcias Pequenas</option>
+                <option value="medias">Pelúcias Médias</option>
+                <option value="grandes">Pelúcias Grandes</option>
+            </select>
+
+            <label>Preço</label>
+            <input type="number" id="preco" step="0.01" required>
+
+            <label>Imagem (URL)</label>
+            <input type="text" id="imagem" required>
+
+            <br><br>
+
+            <button type="reset" onclick="cadastro.classList.add('oculto')">
+                Cancelar
+            </button>
+
+            <button type="submit">
+                Salvar
+            </button>
+
+        </form>
+
+    </div>
+</div>
+
+<!-- DETALHES -->
+<div id="detalhes" class="modal oculto">
+    <div class="janela">
+
+        <h2 id="tituloProduto"></h2>
+        <img id="imgProduto">
+
+        <p><b>Nome</b></p>
+        <input id="nomeEdit">
+
+        <p><b>Categoria</b></p>
+        <select id="categoriaEdit">
+            <option value="pequenas">Pelúcias Pequenas</option>
+            <option value="medias">Pelúcias Médias</option>
+            <option value="grandes">Pelúcias Grandes</option>
+        </select>
+
+        <p><b>Preço</b></p>
+        <input type="number" id="precoEdit" step="0.01">
+
+        <p><b>Imagem</b></p>
+        <input id="imgEdit">
+
+        <br><br>
+
+        <button onclick="salvarEdicao()">Salvar</button>
+        <button onclick="excluirProduto()">Excluir</button>
+        <button onclick="detalhes.classList.add('oculto')">Fechar</button>
+
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
