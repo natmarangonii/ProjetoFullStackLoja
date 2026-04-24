@@ -1,7 +1,6 @@
 const url = 'http://localhost:3000/pelucias';
 let produtoAtual = null;
 
-// Elementos do DOM
 const cadastro = document.getElementById('cadastro');
 const detalhes = document.getElementById('detalhes');
 const tituloProduto = document.getElementById('tituloProduto');
