@@ -1,4 +1,4 @@
-# Simulador de Investimentos
+# Loja de Pelucias
 ## Descrição do projeto
 Um projeto que envolve ligação entre Backend e Frontend sobre uma loja de pelúcias.
 
